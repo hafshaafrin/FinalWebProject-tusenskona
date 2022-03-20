@@ -1,0 +1,39 @@
+*{
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+.logo{
+  height:30%;
+  width: 30%; 
+  cursor: pointer;
+  display: flex;
+  justify-content: flex-start;
+}
+
+header{
+  padding: 0px;
+  background: lightpink;
+  width: 100%;
+}
+
+
+.allTop{
+  display: flex;
+  flex-direction: row;
+}
+
+button{
+padding: 9px 25px;
+background-color: black;
+border: none;
+border-radius: 50px;
+cursor: pointer;
+transition: all 0.3s ease 0s;
+color: white;
+}
+
+button:hover{
+  background-color: darkgreen;
+}
