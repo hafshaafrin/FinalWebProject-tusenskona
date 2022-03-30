@@ -1,0 +1,52 @@
+/* All top navigation and logo*/
+*{
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+
+}
+
+body{
+  background-color:#ffeeec;
+}
+
+.logo{
+  height:30%;
+  width: 30%; 
+  cursor: pointer;
+  display: flex;
+  justify-content: flex-start;
+}
+
+header{
+  padding: 10px 40px;
+  background: lightpink;
+  width: 100%;
+  
+}
+
+
+.allTop{
+  display: flex;
+  flex-direction: row;
+  align-items: center; 
+  justify-content: space-between;
+  
+}
+
+button{
+padding: 9px 25px;
+background-color: black;
+border: none;
+border-radius: 50px;
+cursor: pointer;
+transition: all 0.3s ease 0s;
+color: white;
+font-family: 'Fredoka', sans-serif;
+font-size: 20px;
+}
+
+button:hover{
+  background-color:#ffeeec;
+  color: black;
+}
