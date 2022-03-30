@@ -19,7 +19,7 @@ body{
 }
 
 header{
-  padding: 10px 40px;
+  padding: 10px 10px;
   background: lightpink;
   width: 100%;
   
@@ -50,3 +50,12 @@ button:hover{
   background-color:#ffeeec;
   color: black;
 }
+.black{
+  width: 100%;
+  length: 100px;
+  background-color: black; 
+}
+
+/*dfkhasjkfhkajdhfka*/
+
+
