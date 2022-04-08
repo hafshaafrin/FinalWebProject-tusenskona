@@ -21,6 +21,9 @@
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
 
     
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    
   </head>
   <body>
 
@@ -35,7 +38,7 @@
     
 
 <!-- navigation bar-->
-<div class="navBar">
+<div class="navBar" id="mynavBar"> 
 <nav>
   <a class="cta" href="hh.html"><button>hitta hjälp</button></a>
   <a class="cta" href="chatta.html"><button>chatta</button></a>
@@ -45,20 +48,15 @@
   <a class="cta" href="kont.html"><button>kontakt</button></a>
     <a class="cta" href="oo.html"><button>om oss</button></a>
     <a class="cta" href="mot.html"><button>mottagning</button></a>
-</nav>
-<div class="hamburger">
-<span class="bar"></span>
-<span class="bar"></span>
-<span class="bar"></span>
-<span class="bar"></span>
-<span class="bar"></span>
-<span class="bar"></span>
+   <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+     <i class="fa fa-bars"></i>
+     </a>
+    
 
   
 </div>
 
   
-</div>
 
     
     
@@ -81,7 +79,17 @@ Alla är välkomna
 
 </div>
     
-    <script src="script.js"></script>
+   
   </body>
- 
+ <script>
+      function myFunction() {
+  var x = document.getElementById("mynavBar");
+  if (x.className === "navBar") {
+    x.className += " responsive";
+  } else {
+    x.className = "navBar";
+  }
+}
+
+    </script>
 </html>
