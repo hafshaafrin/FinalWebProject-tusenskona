@@ -33,6 +33,40 @@ header{
   justify-content: space-between;
   
 }
+/* Add a black background color to the top navigation */
+.topnav {
+  background-color: black;
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: black;
+  color: black;
+}
+
+/* Add an active class to highlight the current page */
+.topnav a.active {
+  background-color: darkgreen;
+  color: white;
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+  display: none;
+}
+
 
 button{
 padding: 9px 25px;
@@ -47,19 +81,10 @@ font-size: 20px;
 }
 
 button:hover{
-  background-color:#ffeeec;
+  background-color:#E0B0A6;
   color: black;
 }
 
-
-nav{
-  display: flex;
-  Justify-content: space-evenly;
-  padding: 10px 200px;
-  background-color:black;
- 
-
-}
 /*------------------------*/
 
 
@@ -72,12 +97,10 @@ nav{
 font-family: 'Montserrat', sans-serif;
   
 }
-
-
 /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
 @media screen and (max-width: 600px) {
-  .navBar a:not(:first-child) {display: none;}
-  .navBar a.icon {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
     float: right;
     display: block;
   }
@@ -85,13 +108,13 @@ font-family: 'Montserrat', sans-serif;
 
 /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
 @media screen and (max-width: 600px) {
-  .navBar.responsive {position: relative;}
-  .navBar.responsive a.icon {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive a.icon {
     position: absolute;
     right: 0;
     top: 0;
   }
-  .narBar.responsive a {
+  .topnav.responsive a {
     float: none;
     display: block;
     text-align: left;

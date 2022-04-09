@@ -31,33 +31,31 @@
     <header>
       <div class="allTop">
 <img class="logo" src= "Image.index/logo.png" alt="logo">
+<div class="ophu"> 
+<a class="cta" href="ot.html"><button>huvud text</button></a>
+        
   <a class="cta" href="ot.html"><button>öppettider</button></a>
+</div>
+ 
       </div>
     </header>
 <!--******-->
     
 
 <!-- navigation bar-->
-<div class="navBar" id="mynavBar"> 
-<nav>
-  <a class="cta" href="hh.html"><button>hitta hjälp</button></a>
-  <a class="cta" href="chatta.html"><button>chatta</button></a>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-  <a class="cta" href="akt.html"><button>aktiviteter</button></a>
-  
-  <a class="cta" href="kont.html"><button>kontakt</button></a>
-    <a class="cta" href="oo.html"><button>om oss</button></a>
-    <a class="cta" href="mot.html"><button>mottagning</button></a>
-   <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-     <i class="fa fa-bars"></i>
-     </a>
-    
+<div class="topnav" id="myTopnav">
+  <a href="#home" class="active"><button>home</button></a>
+  <a href="kont.html"><button>kontakt</button></a>
+  <a href="akt.html"><button>aktiviteter</button></a>
+  <a href="oo.html"><button>om</button></a>
+    <a href="mot.html"><button>mottagning</button></a>
 
-  
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
 </div>
-
-  
-
     
     
 <!--******-->
@@ -81,15 +79,14 @@ Alla är välkomna
     
    
   </body>
- <script>
-      function myFunction() {
-  var x = document.getElementById("mynavBar");
-  if (x.className === "navBar") {
+ <script> 
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
     x.className += " responsive";
   } else {
-    x.className = "navBar";
+    x.className = "topnav";
   }
 }
-
     </script>
 </html>
