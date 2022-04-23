@@ -1,36 +1,44 @@
 /* All top navigation and logo*/
 *{
-  box-sizing: border-box;
+  
   margin: 0px;
   padding: 0px;
+ 
 
 }
 
 body{
   background-color:#ffeeec;
+  padding: 0px;
+  margin: 0px;
+   height: 100%;
+  overflow: hidden;
+
 }
 
 .logo{
-  height:30%;
-  width: 30%; 
+  height:70px;
+  width: 300px; 
+  padding: 0px 20px;
   cursor: pointer;
   display: flex;
   justify-content: flex-start;
 }
 
 header{
-  padding: 0px 10px;
   background: lightpink;
   width: 100%;
+  height: 80px;
 }
 
 
 .allTop{
+  width: 100%;
   display: flex;
   flex-direction: row;
   align-items: center; 
   justify-content: space-between;
-  width: 100%;
+ 
   
 }
 /* Add a black background color to the top navigation */
@@ -147,7 +155,10 @@ font-family: 'Montserrat', sans-serif;
     display: block;
     text-align: left;
   }
+
+  
 }
+
 
 
 /* slideshow--------------------------*/
@@ -206,11 +217,11 @@ input[name="r"]{
   display: flex;
 
 }
-
 .slide{
   width: 20%;
   transition: 0.6s;
 }
+
 
 #r1:checked~ .s1{
   margin-left: 0;
@@ -232,7 +243,6 @@ input[name="r"]{
   margin-left: -80%;
 }
 
-
 @media screen and (max-width: 700px){
   .navigation{
     display: none;
@@ -243,4 +253,35 @@ input[name="r"]{
 .slides{
   display: none;
 }
+.topnav{
+  background-color: red; 
+   padding-right: 10%;
+  
+}
+header{
+  padding-right: 10%;
+}
+
+
+body{
+  width: 110%;
+  overflow: hidden;
+}
+  
+}
+
+
+@media screen and (max-width: 400px){
+  .navigation{
+    display: none;
+  }
+.slideshow middle{
+  display: none;
+}
+.slides{
+  display: none;
+}
+
+
+  
 }
