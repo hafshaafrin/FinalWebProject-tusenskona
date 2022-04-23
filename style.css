@@ -22,7 +22,6 @@ header{
   padding: 0px 10px;
   background: lightpink;
   width: 100%;
-  
 }
 
 
@@ -31,12 +30,14 @@ header{
   flex-direction: row;
   align-items: center; 
   justify-content: space-between;
+  width: 100%;
   
 }
 /* Add a black background color to the top navigation */
 .topnav {
   background-color: black;
   overflow: hidden;
+  width: 100%;
 }
 
 /* Style the links inside the navigation bar */
@@ -126,7 +127,10 @@ font-family: 'Montserrat', sans-serif;
   .topnav a.icon {
     float: right;
     display: block;
+  
   }
+
+
 }
 
 /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
@@ -137,6 +141,7 @@ font-family: 'Montserrat', sans-serif;
     right: 0;
     top: 0;
   }
+
   .topnav.responsive a {
     float: none;
     display: block;
@@ -146,6 +151,7 @@ font-family: 'Montserrat', sans-serif;
 
 
 /* slideshow--------------------------*/
+
 img{
 height: 600px;
 width: 100%;
@@ -160,8 +166,8 @@ object-fit: cover;
   overflow: hidden;
 }
 .middle{
-position: absolute;
-top: 90%;
+  position: absolute;
+top: 500px;
 left: 50%;
 transform: translate(-50%,-50%);
 }
@@ -225,6 +231,16 @@ input[name="r"]{
 #r5:checked~ .s1{
   margin-left: -80%;
 }
-#r5:checked~ .s1{
-  margin-left: -100%;
+
+
+@media screen and (max-width: 700px){
+  .navigation{
+    display: none;
+  }
+.slideshow middle{
+  display: none;
+}
+.slides{
+  display: none;
+}
 }
