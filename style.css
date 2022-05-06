@@ -359,5 +359,15 @@ body{
   .hide{
     display: block; 
   }
+  header{
+    max-width: 100vw;
+  }
+
+
+
+.logo{
+  width: 150px; 
+}
+  
 }
 
