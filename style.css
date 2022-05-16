@@ -442,3 +442,43 @@ h2{
   font-family: 'Fredoka', sans-serif;
   padding: 14px;
 }
+/*--------------------------------------*/
+  table{
+    border-collapse: collapse; 
+    margin: 25px 0px; 
+    font-size: 15px; 
+    min-width: 360px; 
+    border-radius: 5px 5px 0 0; 
+    margin-left: 10px; 
+    font-family: 'Fredoka', sans-serif;
+
+}
+  th {
+    background-color: darkgreen; 
+    color: white; 
+    text-align: left; 
+    font-weight: bold; 
+    padding: 12px 15px; 
+  }
+   tr {
+    background-color: white;  
+    color: darkgreen; 
+    text-align: left; 
+    font-weight: bold; 
+    padding: 12px 15px; 
+     border-bottom: 1px solid darkgreen; 
+  }
+
+
+  
+   td {
+    background-color: white;  
+    color: darkgreen; 
+    text-align: left; 
+    font-weight: bold; 
+    padding: 12px 15px; 
+  }
+.opth1{
+margin-left: 50px; 
+
+}
